@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89EB08BA411399396A0FB24A /* libPods-ios-googlemaps-helloworld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D270FF78C1CEDD7318BC9E46 /* libPods-ios-googlemaps-helloworld.a */; };
 		F94FD6442155B22700BC49B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94FD6432155B22700BC49B2 /* AppDelegate.swift */; };
 		F94FD6462155B22700BC49B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94FD6452155B22700BC49B2 /* ViewController.swift */; };
 		F94FD6492155B22700BC49B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94FD6472155B22700BC49B2 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AD31E85FBF9574438724462 /* Pods-ios-googlemaps-helloworld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-googlemaps-helloworld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld.debug.xcconfig"; sourceTree = "<group>"; };
+		8D117B386DF4AB1FECDE8EF4 /* Pods-ios-googlemaps-helloworld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-googlemaps-helloworld.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld.release.xcconfig"; sourceTree = "<group>"; };
+		D270FF78C1CEDD7318BC9E46 /* libPods-ios-googlemaps-helloworld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-googlemaps-helloworld.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94FD6402155B22700BC49B2 /* ios-googlemaps-helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-googlemaps-helloworld.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94FD6432155B22700BC49B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F94FD6452155B22700BC49B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EB08BA411399396A0FB24A /* libPods-ios-googlemaps-helloworld.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D211B2CF4E5F023B88D57FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D270FF78C1CEDD7318BC9E46 /* libPods-ios-googlemaps-helloworld.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59E45A30A8A32773061E8E14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AD31E85FBF9574438724462 /* Pods-ios-googlemaps-helloworld.debug.xcconfig */,
+				8D117B386DF4AB1FECDE8EF4 /* Pods-ios-googlemaps-helloworld.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F94FD6372155B22700BC49B2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				F94FD6572155B22700BC49B2 /* ios-googlemaps-helloworldTests */,
 				F94FD6622155B22700BC49B2 /* ios-googlemaps-helloworldUITests */,
 				F94FD6412155B22700BC49B2 /* Products */,
+				59E45A30A8A32773061E8E14 /* Pods */,
+				2D211B2CF4E5F023B88D57FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F94FD6682155B22700BC49B2 /* Build configuration list for PBXNativeTarget "ios-googlemaps-helloworld" */;
 			buildPhases = (
+				4B9CB02360661AC4C54F12B2 /* [CP] Check Pods Manifest.lock */,
 				F94FD63C2155B22700BC49B2 /* Sources */,
 				F94FD63D2155B22700BC49B2 /* Frameworks */,
 				F94FD63E2155B22700BC49B2 /* Resources */,
+				57D8133C61871AF2DFF2B8AB /* [CP] Copy Pods Resources */,
+				DD55896848D85DD418A338E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B9CB02360661AC4C54F12B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-googlemaps-helloworld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57D8133C61871AF2DFF2B8AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD55896848D85DD418A338E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-frameworks.sh",
+				"${PODS_ROOT}/../../../navisens-core/ios-sdk/build/release-universal/MotionDnaSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionDnaSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F94FD63C2155B22700BC49B2 /* Sources */ = {
@@ -428,10 +514,12 @@
 		};
 		F94FD6692155B22700BC49B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD31E85FBF9574438724462 /* Pods-ios-googlemaps-helloworld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z633UZ59K8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "ios-googlemaps-helloworld/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,10 +534,12 @@
 		};
 		F94FD66A2155B22700BC49B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D117B386DF4AB1FECDE8EF4 /* Pods-ios-googlemaps-helloworld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z633UZ59K8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "ios-googlemaps-helloworld/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
