@@ -20,7 +20,7 @@ class ViewController: UIViewController, MotionDnaSDKDelegate {
     let userLocationMarker = GMSMarker()
 
     // Google Maps map instance
-    var mapView : GMSMapView?
+    var mapView : GMSMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,14 +55,20 @@ class ViewController: UIViewController, MotionDnaSDKDelegate {
     }
     
     func receive(motionDna: MotionDna) {
+        guard let global = motionDna.location.global , global.latitude != 0.0, global.longitude != 0.0 else {
+            return
+        }
+
         DispatchQueue.main.async{
             var location = CLLocationCoordinate2D()
-            location.latitude = motionDna.location.global.latitude
-            location.longitude = motionDna.location.global.longitude
+            location.latitude = global.latitude
+            location.longitude = global.longitude
         
             if (self.first){
                 // Animate camera to first position
-                self.mapView?.animate(toLocation: location)
+                let cameraPosition = GMSCameraPosition(target: location, zoom: 18.0)
+                let cameraUpdate = GMSCameraUpdate.setCamera(cameraPosition)
+                self.mapView.animate(with: cameraUpdate)
                 self.first = false
             }
             // Set icon to received SDK location
