@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89EB08BA411399396A0FB24A /* libPods-ios-googlemaps-helloworld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D270FF78C1CEDD7318BC9E46 /* libPods-ios-googlemaps-helloworld.a */; };
 		F94FD6442155B22700BC49B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94FD6432155B22700BC49B2 /* AppDelegate.swift */; };
 		F94FD6462155B22700BC49B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94FD6452155B22700BC49B2 /* ViewController.swift */; };
 		F94FD6492155B22700BC49B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94FD6472155B22700BC49B2 /* Main.storyboard */; };
@@ -15,6 +14,7 @@
 		F94FD64E2155B22700BC49B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94FD64C2155B22700BC49B2 /* LaunchScreen.storyboard */; };
 		F94FD6592155B22700BC49B2 /* ios_googlemaps_helloworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94FD6582155B22700BC49B2 /* ios_googlemaps_helloworldTests.swift */; };
 		F94FD6642155B22700BC49B2 /* ios_googlemaps_helloworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94FD6632155B22700BC49B2 /* ios_googlemaps_helloworldUITests.swift */; };
+		FAD5FEF85AAAA860F709648B /* Pods_ios_googlemaps_helloworld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7926E9ECA2697927FCAA6249 /* Pods_ios_googlemaps_helloworld.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,8 @@
 
 /* Begin PBXFileReference section */
 		0AD31E85FBF9574438724462 /* Pods-ios-googlemaps-helloworld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-googlemaps-helloworld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld.debug.xcconfig"; sourceTree = "<group>"; };
+		7926E9ECA2697927FCAA6249 /* Pods_ios_googlemaps_helloworld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_googlemaps_helloworld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D117B386DF4AB1FECDE8EF4 /* Pods-ios-googlemaps-helloworld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-googlemaps-helloworld.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld.release.xcconfig"; sourceTree = "<group>"; };
-		D270FF78C1CEDD7318BC9E46 /* libPods-ios-googlemaps-helloworld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-googlemaps-helloworld.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94FD6402155B22700BC49B2 /* ios-googlemaps-helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-googlemaps-helloworld.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94FD6432155B22700BC49B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F94FD6452155B22700BC49B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89EB08BA411399396A0FB24A /* libPods-ios-googlemaps-helloworld.a in Frameworks */,
+				FAD5FEF85AAAA860F709648B /* Pods_ios_googlemaps_helloworld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 		2D211B2CF4E5F023B88D57FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D270FF78C1CEDD7318BC9E46 /* libPods-ios-googlemaps-helloworld.a */,
+				7926E9ECA2697927FCAA6249 /* Pods_ios_googlemaps_helloworld.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,18 +215,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Lucas Mckenna";
 				TargetAttributes = {
 					F94FD63F2155B22700BC49B2 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1200;
 					};
 					F94FD6532155B22700BC49B2 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1200;
 						TestTargetID = F94FD63F2155B22700BC49B2;
 					};
 					F94FD65E2155B22700BC49B2 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1200;
 						TestTargetID = F94FD63F2155B22700BC49B2;
 					};
 				};
@@ -302,19 +305,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD55896848D85DD418A338E4 /* [CP] Embed Pods Frameworks */ = {
@@ -322,17 +322,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-frameworks.sh",
-				"${PODS_ROOT}/../../../navisens-core/ios-sdk/build/release-universal/MotionDnaSDK.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionDnaSDK.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-googlemaps-helloworld/Pods-ios-googlemaps-helloworld-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -424,6 +423,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -449,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -484,6 +484,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -503,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -521,13 +522,14 @@
 				DEVELOPMENT_TEAM = Z633UZ59K8;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "ios-googlemaps-helloworld/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "navisens.ios-googlemaps-helloworld";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -541,13 +543,14 @@
 				DEVELOPMENT_TEAM = Z633UZ59K8;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "ios-googlemaps-helloworld/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "navisens.ios-googlemaps-helloworld";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -567,7 +570,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "navisens.ios-googlemaps-helloworldTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-googlemaps-helloworld.app/ios-googlemaps-helloworld";
 			};
@@ -588,7 +591,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "navisens.ios-googlemaps-helloworldTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-googlemaps-helloworld.app/ios-googlemaps-helloworld";
 			};
@@ -608,7 +611,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "navisens.ios-googlemaps-helloworldUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "ios-googlemaps-helloworld";
 			};
@@ -628,7 +631,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "navisens.ios-googlemaps-helloworldUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "ios-googlemaps-helloworld";
 			};
